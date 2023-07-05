@@ -48,6 +48,7 @@ main {
 }
 
 .write-btn {
+  background-color: var(--button-primary);
   padding: 10px 15px 10px 15px;
   border-radius: 25px;
   font-size: 15px;
@@ -56,4 +57,10 @@ main {
   right: 20px;
   background-color: #fe6f0f;
   color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.write-btn:hover {
+  background-color: var(--button-hover);
 }
