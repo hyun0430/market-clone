@@ -23,9 +23,10 @@ cur.execute(f"""
             """)
 
 SECRET = 'super-coding'
+S = bytes(SECRET, 'utf-8')
 app = FastAPI()
 
-manager = LoginManager(SECRET, '/login')
+manager = LoginManager(S, '/login')
 
 @manager.user_loader()
 def query_user(id):
